@@ -1,0 +1,18 @@
+{
+  "name": "grasp-controller",
+  "version": "5.0.0",
+  "description": "GRASP: controller example",
+  "license": "MIT",
+  "private": true,
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon main.js"
+  },
+  "dependencies": {
+    "pg": "^8.8.0",
+    "ws": "^8.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
