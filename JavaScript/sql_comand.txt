@@ -1,0 +1,4 @@
+CREATE USER test CREATEDB PASSWORD 'test';
+CREATE DATABASE test;
+\i /Users/it/Desktop/nodejs/ddd/DDD/JavaScript/db/structure.sql
+\i /Users/it/Desktop/nodejs/ddd/DDD/JavaScript/db/data.sql
