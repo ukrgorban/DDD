@@ -3,7 +3,8 @@
 const fsp = require("node:fs").promises;
 const path = require("node:path");
 const config = require("./config.js");
-const server = require("./" + config.transport + ".js");
+const server = require(`./${config.framework}_${config.transport}.js`);
+
 const staticServer = require("./static.js");
 const load = require("./load.js");
 const db = require("./db.js");

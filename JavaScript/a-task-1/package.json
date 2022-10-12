@@ -6,9 +6,11 @@
   "private": true,
   "main": "main.js",
   "scripts": {
-    "dev": "nodemon main.js"
+    "dev": "nodemon main.js",
+    "fastify": "nodemon fastify.js"
   },
   "dependencies": {
+    "fastify": "^4.8.1",
     "pg": "^8.8.0",
     "ws": "^8.8.1"
   },

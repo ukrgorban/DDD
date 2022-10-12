@@ -9,6 +9,7 @@ const config = {
   staticPort: 8000,
   port: 8001,
   transport: "http",
+  framework: "fastify",
 };
 
 module.exports = config;
