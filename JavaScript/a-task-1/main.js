@@ -6,10 +6,10 @@ const config = require("./config.js");
 const server = require(`./${config.framework}_${config.transport}.js`);
 
 const staticServer = require("./static.js");
-const load = require("./load.js");
-const db = require("./db.js");
+const load = require("./load.js")(config.sandbox);
+const db = require("./db.js")(config.db);
 const hash = require("./hash.js");
-const logger = require("./logger.js");
+const logger = require(`./${config.logger}.js`);
 
 const sandbox = {
   console: Object.freeze(logger),
@@ -30,5 +30,5 @@ const routing = {};
   }
 
   staticServer("./static", config.staticPort);
-  server(routing, config.port);
+  server(routing, config.port, logger);
 })();

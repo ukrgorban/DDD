@@ -6,10 +6,15 @@ const config = {
     user: "test",
     password: "test",
   },
+  sandbox: {
+    timeout: 5000,
+    displayErrors: false,
+  },
   staticPort: 8000,
   port: 8001,
   transport: "http",
-  framework: "fastify",
+  framework: "native",
+  logger: "pino",
 };
 
 module.exports = config;
