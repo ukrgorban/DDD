@@ -1,21 +1,22 @@
 {
-  "name": "grasp-controller",
-  "version": "5.0.0",
-  "description": "GRASP: controller example",
-  "license": "MIT",
-  "private": true,
-  "main": "main.js",
-  "scripts": {
-    "dev": "nodemon main.js",
-    "fastify": "nodemon fastify.js"
-  },
-  "dependencies": {
-    "fastify": "^4.8.1",
-    "pg": "^8.8.0",
-    "pino": "^8.6.1",
-    "ws": "^8.8.1"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.20"
-  }
+    "name": "grasp-controller",
+    "version": "5.0.0",
+    "description": "GRASP: controller example",
+    "license": "MIT",
+    "private": true,
+    "main": "main.js",
+    "scripts": {
+        "dev": "nodemon main.js",
+        "test": "node main.js",
+        "fastify": "nodemon fastify.js"
+    },
+    "dependencies": {
+        "fastify": "^4.8.1",
+        "pg": "^8.8.0",
+        "pino": "^8.6.1",
+        "ws": "^8.8.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    }
 }

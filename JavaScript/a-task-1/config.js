@@ -1,20 +1,22 @@
 const config = {
-  db: {
-    host: "127.0.0.1",
-    port: 5432,
-    database: "test",
-    user: "test",
-    password: "test",
-  },
-  sandbox: {
-    timeout: 5000,
-    displayErrors: false,
-  },
-  staticPort: 8000,
-  port: 8001,
-  transport: "http",
-  framework: "native",
-  logger: "pino",
+    db: {
+        host: '127.0.0.1',
+        port: 5432,
+        database: 'test',
+        user: 'test',
+        password: 'test',
+        // user: 'postgres',
+        // password: '123456',
+    },
+    sandbox: {
+        timeout: 5000,
+        displayErrors: false,
+    },
+    staticPort: 8000,
+    port: 8001,
+    transport: 'http',
+    framework: 'native',
+    logger: 'pino',
 };
 
 module.exports = config;
